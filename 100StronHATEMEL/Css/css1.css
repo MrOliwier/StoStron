@@ -13,6 +13,7 @@ Body{
     margin: 0;
 }
 
+/* Zmiana kolorów Linków Etc. */
 a:link{
     color: black;
     text-decoration: none;
@@ -21,6 +22,10 @@ a:link{
 a:visited{
     color: black;
     text-decoration: none;
+}
+
+a:hover{
+    color: var(--col3);
 }
 
 div.grid {
