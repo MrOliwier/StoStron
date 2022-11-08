@@ -1,0 +1,131 @@
+:root {
+    --col1: #000000;
+    --col2: #14213D;
+    --col3: #FCA311;
+    --col4: #E5E5E5;
+    --col4-1: #d5d5d5;
+    --col5: #ffffff;
+}
+
+html { height: 100%; }
+
+Body{
+    background-color: rgb(41, 51, 51);
+    margin: 0;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content 160vmin 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+div.grid header.grid-header{
+    background-color:var(--col2);
+    grid-area: 1/1/2/4;
+
+    text-align: center;
+
+    color: var(--col4)
+}
+
+div.grid div.grid-section:nth-of-type(1){
+    background-color: var(--col2);
+    grid-area: 2/1/4/2;
+    display: flexbox;
+}
+
+div.grid div.content{
+    background-color: var(--col5);
+    display: flexbox;
+    grid-area: 2/2/4/4;
+}
+
+div.grid footer{
+    background-color: var(--col3);
+    grid-area: 4/1/5/4;
+
+}
+
+
+/* CATEGORIES */
+
+div.category {
+    background-color: var(--col4);
+    margin-bottom: 5px;
+    
+}
+
+div.category div.title {
+    background: var(--col3);
+    background: linear-gradient(45deg, var(--col3) 0%, rgb(255, 41, 8) 100%);
+
+    text-transform: capitalize;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    padding: 1ch 8ch 1ch 1ch;
+
+    color: var(--col2);
+    
+}
+
+div.category div.title:hover {
+    background: var(--col3);
+    background: 
+        linear-gradient(45deg, rgba(252, 162, 17, 0.5), rgba(255, 41, 8,0.5)),
+        linear-gradient(45deg, rgba(252, 162, 17, 0.2), rgba(255,255,255,1));
+}
+
+
+div.catElement {
+    display: none;
+    visibility: hidden;
+    background-color: var(--col4);
+
+    transition: all 1s, cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+div.catElementShown {
+    display: block;
+    visibility: visible;
+    background-color: var(--col4);
+    border-right: 0px solid transparent;
+
+    padding-left: 0.5ch;
+    padding-top: 0.5ch;
+    padding-bottom: 0.5ch;
+    padding-right: 1ch;
+
+    transition: border-right-width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    
+}
+
+div.catElementShown:hover {
+    border-right: 3px solid #14213D;
+    background-color: var(--col4-1)
+    
+}
+
+
+/* CONTENT */
+
+div.content {
+    padding: 5px;
+}
+

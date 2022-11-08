@@ -3,10 +3,10 @@ function show(num) {
     console.log(document.getElementById(String(num)));
     for(const child of button){
         if(child.className != 'title'){
-            if(child.style.display == "block"){
-                child.style.display = "none";
+            if(child.className == "catElement"){
+                child.className = "catElementShown";
             } else {
-                child.style.display = "block";
+                child.className = "catElement";
             }
         }
     }
