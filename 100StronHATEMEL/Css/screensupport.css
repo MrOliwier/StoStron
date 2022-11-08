@@ -1,0 +1,29 @@
+/* FOR DIFFERENT SCREEN SIZES */
+
+@media screen and (max-width:400px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        flex-wrap: wrap;
+
+        height: 100%;
+    }
+
+    div.grid {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        align-content: stretch;
+
+        height: 100%;
+    }
+
+    div.grid div.grid-header {
+        flex: 0 1 auto;
+    }
+
+    div.grid div.content {
+        flex: 1 1 auto;
+    }
+}

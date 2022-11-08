@@ -3,6 +3,7 @@
     --col2: #14213D;
     --col3: #FCA311;
     --col4: #E5E5E5;
+    --col4-1: #d5d5d5;
     --col5: #ffffff;
 }
 
@@ -25,19 +26,19 @@ a:visited{
 
 div.grid {
     display: grid;
-    grid-template-columns: 0.25fr 1fr;
-    grid-template-rows: 1fr 160vmin 1fr;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content 160vmin 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
 div.grid header.grid-header{
-    background-color:var(--col5);
+    background-color:var(--col2);
     grid-area: 1/1/2/4;
-    border-bottom: 2px;
-    border-bottom-style: solid;
 
     text-align: center;
+
+    color: var(--col4)
 }
 
 div.grid div.grid-section:nth-of-type(1){
@@ -47,7 +48,7 @@ div.grid div.grid-section:nth-of-type(1){
 }
 
 div.grid div.content{
-    background-color: var(--col4);
+    background-color: var(--col5);
     display: flexbox;
     grid-area: 2/2/4/4;
 }
@@ -58,23 +59,18 @@ div.grid footer{
 
 }
 
+
 /* CATEGORIES */
 
 div.category {
     background-color: var(--col4);
-    margin: 0.5ch;
-
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--col5);
-    border-start-start-radius: 5px;
-    border-end-end-radius: 5px;
+    margin-bottom: 5px;
     
 }
 
 div.category div.title {
-    background-color: var(--col3);
-    
+    background: var(--col3);
+    background: linear-gradient(45deg, var(--col3) 0%, rgb(255, 41, 8) 100%);
 
     text-transform: capitalize;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
@@ -82,17 +78,48 @@ div.category div.title {
     -ms-user-select: none;
     user-select: none;
 
-    padding: 2px;
+    padding: 1ch 8ch 1ch 1ch;
+
+    color: var(--col2);
     
 }
 
 div.category div.title:hover {
-    background-color: rgb(26, 124, 148);
+    background: var(--col3);
+    background: 
+        linear-gradient(45deg, rgba(252, 162, 17, 0.5), rgba(255, 41, 8,0.5)),
+        linear-gradient(45deg, rgba(252, 162, 17, 0.2), rgba(255,255,255,1));
 }
+
 
 div.catElement {
     display: none;
+    visibility: hidden;
     background-color: var(--col4);
+
+    transition: all 1s, cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+div.catElementShown {
+    display: block;
+    visibility: visible;
+    background-color: var(--col4);
+    border-right: 0px solid transparent;
+
+    padding-left: 0.5ch;
+    padding-top: 0.5ch;
+    padding-bottom: 0.5ch;
+    padding-right: 1ch;
+
+    transition: border-right-width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    
+}
+
+div.catElementShown:hover {
+    border-right: 3px solid #14213D;
+    background-color: var(--col4-1)
+    
 }
 
 
@@ -101,3 +128,4 @@ div.catElement {
 div.content {
     padding: 5px;
 }
+
