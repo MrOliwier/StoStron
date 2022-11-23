@@ -126,6 +126,25 @@ div.catElementShown:hover {
 /* CONTENT */
 
 div.content {
-    padding: 5px;
+    padding: 3ch;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+div.content li[onclick]:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.content table {
+    
+}
+
+div.content table td{
+    padding: 1ch;
+}
+
+div.content table tr:first-of-type{
+    font-weight:bolder
 }
 
