@@ -129,6 +129,21 @@ div.content {
     padding: 3ch;
     text-align: justify;
     text-justify: distribute-all-lines;
+    display: flex;
+    flex-direction: column;
+}
+
+div.content button{
+    padding: 0,5ch 1,5ch 0,5ch 1,5ch;
+    margin-top: 5ch;
+    display: block;
+    height: 4ch;
+    width: 12ch;
+    background: var(--col3);
+    background: linear-gradient(45deg, var(--col3) 0%, rgb(255, 41, 8) 100%);
+    color: white;
+    border: 0;
+
 }
 
 div.content li[onclick]:hover{

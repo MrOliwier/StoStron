@@ -13,3 +13,8 @@ function show(num) {
     
 
 } 
+
+function Pressed(){
+    history.back();
+
+}
