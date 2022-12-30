@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jądro Linuxa</title>
+        <link rel="stylesheet" href="../../Css/main.css">
+        <link rel="stylesheet" href="../../Css/screensupport.css">
+        <script type="text/javascript" src="../../JS/main.js"></script>
+    </head>
+    <body>
+        <div class="grid">
+            <header class="grid-header">
+
+                <h1>Jądro Linuxa</h1>
+
+            </header>
+<!--LEFT SIDE-->
+            <div class="grid-section">
+                <div class="category">
+                    <div class="title" id="1" onclick="show(this.id)">Windows</div>
+                    
+                    <div class="catElement"><a href="../Windows/Wstęp.html">Wstep</a></div>
+                    <div class="catElement"><a href="../Windows/Historia.html">Historia</a></div>
+                    <div class="catElement"><a href="../Windows/SystemyOperacyjne.html" >Systemy Operacyjne</a></div>
+                    <div class="catElement"><a href="../Windows/WersjeSerwerowe.html" >Wersje Serwerowe</a></div>
+                    <div class="catElement"><a href="../Windows/Bezpieczenstwo.html" >Bezpieczenstwo</a></div>
+                    <div class="catElement"><a href="../Windows/WindowsPhone.html" >Windows Phone</a></div>
+                    <div class="catElement"><a href="../Windows/OProducencie.html" >O Producencie</a></div>
+                    <div class="catElement"><a href="../Windows/DatyWydan.html" >Daty Wydan</a></div>
+
+                </div>
+
+                <div class="category">
+                    <div class="title" id="2" onclick="show(this.id)">Linux</div>
+                    
+                    <div class="catElement"><a href="Historia.html">Historia</a></div>
+                    <div class="catElement"><a href="Dystrybucje.html">Dystrybucje</a></div>
+                    <div class="catElement"><a href="ZastosowaniaSystemu.html">Zastowania systemu</a></div>
+                    <div class="catElement"><a href="Interfejsy_tekstowy.html"> Interfejs Tesktowy </a> </div>
+                    <div class="catElement"><a href="Interfejsy_graficzny.html"> Interfejs Graficzny </a> </div>
+                    <div class="catElement">Jestes w: <b>Jadro Linuxa </b> </div>
+                    <div class="catElement"><a href="GNU.html"> Licencja GNU </a> </div>
+                    
+                </div>
+
+                <div class="category">
+                    <div class="title" id="3" onclick="show(this.id)">Apple</div>
+                    
+                    <div class="catElement"><a href="../Apple/Historia.html">Historia</a></div>
+                    <div class="catElement"><a href="../Apple/Produkty.html">Produkty</a></div>
+                    <div class="catElement"><a href="../Apple/DatyWydan.html">Daty Wydan</a></div>
+                    <div class="catElement"><a href="../Apple/MacOS.html">MacOS</a></div>
+                    <div class="catElement"><a href="../Apple/IOS.html">IOS</a></div>
+                    <div class="catElement"><a href="../Apple/Macintosh.html">Macintosh</a></div>
+                    <div class="catElement"><a href="../Apple/Załozyciele-Steve-Jobs.html">Załozyciel Steve Jobs</a></div>
+                    <div class="catElement"><a href="../Apple/Załozyciele-Steve-Wozniak.html">Załozyciel Steve Wozniak</a></div>
+                    
+                </div>
+
+                <div class="category">
+                    <div class="title" id="4" onclick="show(this.id)">Strona Główna</div>
+                    
+                    <div class="catElement"><a href="../template.html">Strona główna</a></div>
+                    <div class="catElement"><a href="../Biblografia.html">Bibliografia</a></div>
+                    
+                </div>
+
+            </div>
+<!--RIGHT SIDE-->
+            <div class="content">
+                <h3>Jądro Linux (ang. Linux kernel) – jedna z części uniksopodobnych systemów operacyjnych.
+                    Jest wolnym oprogramowaniem napisanym przez Linusa Torvaldsa w 1991 roku, a obecnie rozwijane przez wielu programistów z całego świata w ramach The Linux Foundation.
+                    Początkowo Linux działał na platformie Intel 80386, później został przeniesiony także na wiele innych platform.
+                    Największa część kodu napisana jest w języku C, z pewnymi rozszerzeniami GCC, a pozostała część to wstawki w asemblerze.
+                    Kod jądra Linux jest objęty licencją GNU General Public License, jest zatem oprogramowaniem FLOSS.
+                    Jądro Linux jest w dużym stopniu zgodne ze standardami ANSI i POSIX, obsługuje wielozadaniowość, wielowątkowość, wielobieżność, pamięć wirtualną, biblioteki współdzielone, ładowanie na żądanie, współdzielony kod wykonywalny (ang. copy-on-write), dobre zarządzanie pamięcią i obsługę sieci TCP/IP.
+                    Jest ono jądrem monolitycznym z ładowalnymi modułami.
+                    Sterowniki urządzeń i rozszerzenia jądra zwykle pracują w trybie ring 0, z pełnym dostępem do sprzętu; nieliczne jednak działają w trybie użytkownika.
+                    W przeciwieństwie do typowych jąder monolitycznych, sterowniki urządzeń są zwykle kompilowane jako moduły, które można załadować i wyładować na działającym systemie.
+                    Podobnie, sterowniki mogą być wywłaszczone w określonych warunkach. Ta funkcja została dodana w celu poprawnej obsługi przerwań sprzętowych i systemów wieloprocesorowych.
+                    Fakt, że Linux jest zbudowany na zasadzie jądra monolitycznego, a nie mikrojądra był powodem słynnej dyskusji między Linusem Torvaldsem a Andrew S. Tanenbaumem (autorem Miniksa) na grupie comp.os.minix w 1992 roku.
+                    Linus Torvalds nadal koordynuje wydawanie nowych wersji jądra, konsolidując poprawki napisane przez innych programistów i dodając własne zmiany.
+                    Wydania jądra z parzystym drugorzędnym numerem wersji należą do serii stabilnych wydań: 1.0.x, 1.2.x, 2.0.x, 2.2.x, 2.4.x, 2.6.x i 3.0.x; wydania z nieparzystym drugorzędnym numerem wersji, np. seria 2.5.x, nazywane są rozwojowymi i nie są zalecane do celów produkcyjnych.
+                    Podczas gdy Torvalds zajmuje się najnowszymi wersjami rozwojowymi, starszymi „stabilnymi” opiekują się inni programiści: David Weinehall (2.0), Alan Cox i później Marc-Christian Petersen (2.2), Marcelo Tosatti (2.4) oraz Andrew Morton (2.6).
+                    Poza powyższymi „oficjalnymi” wersjami można też znaleźć wiele innych źródeł pełnego drzewa jądra z nieoficjalnymi poprawkami.
+                    Dystrybutorzy systemów operacyjnych zwykle utrzymują własne wersje jądra, np. dodając sterowniki do urządzeń, które nie zostały z różnych powodów włączone do oficjalnego drzewa.
+                    Równoległe, nieoficjalne gałęzie, np. 2.4 Alana Coksa lub Andrei Arcangelego oznaczane są poprzez dodanie odpowiedniej końcówki: -ac dla jąder Alana Coksa, -aa dla jąder Andrei itd.
+                    Po każdej serii stabilnej (a właściwie już w jej trakcie) rozpoczynana jest seria rozwojowa, w której jest miejsce na eksperymenty, przebudowy itd.
+                    Z tego powodu wersje rozwojowe nie nadają się do poważnego użytkowania, często nawet nie mogą zostać skompilowane.
+                    Po jakimś czasie seria rozwojowa „dojrzewa” i staje się pierwszą wersją nowej serii stabilnej, a poprzednia stabilna seria wchodzi w stan „spoczynku”, kiedy wprowadzane są praktycznie tylko poprawki bezpieczeństwa oraz z rzadka porty fragmentów kodu z nowszych serii (np. sterowników urządzeń).
+                    Oznaczenie typu 2.4.18-rc1, to tzw. wydanie kandydujące (ang. release candidate), czyli „kandydat” do bycia nową wersją stabilną, o ile nie zostaną w nim znalezione poważniejsze błędy.
+                    Gdy ich nie ma, to (w teorii) nowa wersja rozwojowa nie będzie się niczym różniła (oprócz samej nazwy) od powstałej na jej podstawie wersji stabilnej.
+                    Jeśli się znajdą, zostają one poprawione, w wyniku czego powstaje nowa wersja „kandydująca” i cykl się powtarza. Wersje -rc pojawiają się z reguły już po kilku wersjach -pre.
+                    Do używania „wersji kandydujących” zobowiązał się obecny opiekun linii 2.4, Marcelo Tosatti.
+                </h3>
+                
+                
+
+            </div>
+
+            <footer>
+                By: Arkadiusz Marzewski, Oliwier Kubka
+            </footer>
+        </div>
+    </body>
+</html>

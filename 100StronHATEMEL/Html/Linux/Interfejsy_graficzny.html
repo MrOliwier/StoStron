@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Interfejs Graficzny</title>
+        <link rel="stylesheet" href="../../Css/main.css">
+        <link rel="stylesheet" href="../../Css/screensupport.css">
+        <script type="text/javascript" src="../../JS/main.js"></script>
+    </head>
+    <body>
+        <div class="grid">
+            <header class="grid-header">
+
+                <h1>Interfejs Graficzny</h1>
+
+            </header>
+<!--LEFT SIDE-->
+            <div class="grid-section">
+                <div class="category">
+                    <div class="title" id="1" onclick="show(this.id)">Windows</div>
+                    
+
+                    <div class="catElement"><a href="../Windows/Wstęp.html">Wstep</a></div>
+                    <div class="catElement"><a href="../Windows/Historia.html">Historia</a></div>
+                    <div class="catElement"><a href="../Windows/SystemyOperacyjne.html" >Systemy Operacyjne</a></div>
+                    <div class="catElement"><a href="../Windows/WersjeSerwerowe.html" >Wersje Serwerowe</a></div>
+                    <div class="catElement"><a href="../Windows/Bezpieczenstwo.html" >Bezpieczenstwo</a></div>
+                    <div class="catElement"><a href="../Windows/WindowsPhone.html" >Windows Phone</a></div>
+                    <div class="catElement"><a href="../Windows/OProducencie.html" >O Producencie</a></div>
+                    <div class="catElement"><a href="../Windows/DatyWydan.html" >Daty Wydan</a></div>
+
+                </div>
+
+                <div class="category">
+                    <div class="title" id="2" onclick="show(this.id)">Linux</div>
+                    
+                    <div class="catElement"><a href="Historia.html">Historia</a></div>
+                    <div class="catElement"><a href="Dystrybucje.html">Dystrybucje</a></div>
+                    <div class="catElement"><a href="ZastosowaniaSystemu.html">Zastowania systemu</a></div>
+                    <div class="catElement"><a href="Interfejsy_tekstowy.html"> Interfejs Tesktowy </a> </div>
+                    <div class="catElement">Jestes w: <b>Interfejs Graficzny</b> </div>
+                    <div class="catElement"><a href="Jadro.html"> Jadro Linuxa </a> </div>
+                    <div class="catElement"><a href="GNU.html"> Licencja GNU </a> </div>   
+                    
+                </div>
+
+                <div class="category">
+                    <div class="title" id="3" onclick="show(this.id)">Apple</div>
+                    
+                    <div class="catElement"><a href="../Apple/Historia.html">Historia</a></div>
+                    <div class="catElement"><a href="../Apple/Produkty.html">Produkty</a></div>
+                    <div class="catElement"><a href="../Apple/DatyWydan.html">Daty Wydan</a></div>
+                    <div class="catElement"><a href="../Apple/MacOS.html">MacOS</a></div>
+                    <div class="catElement"><a href="../Apple/IOS.html">IOS</a></div>
+                    <div class="catElement"><a href="../Apple/Macintosh.html">Macintosh</a></div>
+                    <div class="catElement"><a href="../Apple/Załozyciele-Steve-Jobs.html">Załozyciel Steve Jobs</a></div>
+                    <div class="catElement"><a href="../Apple/Załozyciele-Steve-Wozniak.html">Załozyciel Steve Wozniak</a></div>
+                    
+                </div>
+
+                <div class="category">
+                    <div class="title" id="4" onclick="show(this.id)">Strona Główna</div>
+                    
+                    <div class="catElement"><a href="../template.html">Strona główna</a></div>
+                    <div class="catElement"><a href="../Biblografia.html">Bibliografia</a></div>
+                    
+                </div>
+
+            </div>
+<!--RIGHT SIDE-->
+            <div class="content">
+                <h3>Graficzny interfejs użytkownika GUI nie jest w Linuksie integralną częścią systemu operacyjnego, lecz dodatkowym zbiorem programów.
+                    W zależności od stopnia zaawansowania i integracji użytych rozwiązań, dostępne GUI możemy podzielić na małe menedżery okien oraz duże środowiska graficzne.
+                    Jedna z opcji GUI dla Linuksa jest osobnym menedżerem okien, takim jak Fluxbox, dwm, awesome i te menedżery mogą mieć zestaw najróżniejszych aplikacji, uruchamianych za pomocą Menedżera Okien bądź dmenu.
+                    Menedżer okien pozwala na kontrolowanie położenia i wyglądu okien indywidualnych aplikacji oraz na interakcję z X Window System.
+                    Wadą niezależnych menedżerów okien jest trudność w uzyskaniu spójnych i jednolitych interfejsów różnych aplikacji.
+                    Przedstawione zrzuty ekranów przedstawiają XMMS, RealPlayer, Mozilla Firefox, xterm, gaim i Konqueror; każdy z nich prezentuje się inaczej, ponadto, aplikacje te korzystają z odrębnych skrótów klawiszowych, inaczej organizują swoje menu, posiadają inne mechanizmy kopiowania i wklejania.
+                    Nawet jeśli każda aplikacja z osobna jest dobrze dopracowana, to używanie ich wszystkich w grupie jest utrudnione, gdyż zachowania, których nauczymy się w jednej aplikacji, zazwyczaj dają się zastosować tylko w niej.
+                    Zaletą korzystania z niezależnego menedżera okien jest prostota (z punktu widzenia programistów i doświadczonych użytkowników) oraz szybkość i niezawodność ich działania.
+                    Ponadto w porównaniu z dużymi środowiskami graficznymi takimi jak GNOME lub KDE, niezależne menedżery w mniejszym stopniu angażują zasoby takie jak procesor, pamięć i miejsce na dysku twardym.
+                    Użytkownicy, którzy preferują pracę w terminalu, chętnie pracują w minimalistycznych środowiskach graficznych; menedżer okien, sam w sobie, ma im przede wszystkim zapewnić możliwość otwierania okien emulatorów terminali komputerowych.
+                    Są też menedżery okien bazowane na wl-roots które oparte są na Waylandzie, takie jak: Sway, dwl (dwm dla wayland), Qtile (też dostępne na X).
+                    Używanie małych menedżerów okien staje się coraz mniej popularne wraz ze wzrostem większych środowisk graficznych.
+                    Są to zintegrowane sposoby na wygodną pracę, które starają się zapewnić interfejs równie łatwy w obsłudze, jak ten z MacOS X lub Microsoft Windows.
+                    Łączą one menedżer okien z pakietem standardowych aplikacji, które są łatwe w obsłudze nawet z punktu widzenia początkujących użytkowników.
+                    Jednym z pierwszych rozpowszechnionych środowisk graficznych było CDE, które nie stało się popularne na Linuksie ze względu na koszty i ograniczenia licencyjne.
+                    W 1996 powstało KDE, a po nim, w 1997 roku, GNOME. Xfce jest trochę mniejszym projektem, który również powstał w 1997 i skupia się na szybkości i możliwości konfiguracji.
+                    <ul>Obecnie rozwiązaniami dominującymi są GNOME i KDE, zazwyczaj instaluje się je standardowo na systemach linuksowych. Każde z nich oferuje:
+                    <li>dla programistów m.in. zestaw standardowych API oraz środowisko programistyczne,</li>
+                    <li>dostępność w wielu językach i wsparcie dla tłumaczy,</li>
+                    <li>kompletne środowisko graficzne z zestawem potrzebnych aplikacji, takich jak menedżer plików, przeglądarka internetowa, odtwarzacz multimediów, klient poczty elektronicznej, książka adresowa, przeglądarka dokumentów PDF, menedżer fotografii,</li>
+                    <li>możliwość dostosowania systemu do swoich potrzeb.</li>
+                    </ul>
+                    Mimo iż oba te środowiska graficzne mają podobne cele, radzą sobie z nimi całkiem inaczej. KDE stara się, aby aplikacje były jak najbardziej konfigurowalne, aby można było w nie ingerować i aby mogły ze sobą w łatwy sposób kooperować.
+                    GNOME z drugiej strony, koncentrując się na kluczowych zadaniach (zgodnie z filozofią making things just work), stara się, aby całość była jak najprostsza w obsłudze.
+                    Każde z tych środowisk przyciąga inny rodzaj użytkowników i tworzy inną społeczność deweloperów.
+                    Na początku XXI wieku oba te środowiska są już dojrzałe. Projekty Appeal i ToPaZ skupiają się na opracowywaniu nowych możliwości dla kolejnych edycji KDE i GNOME.
+                    </h3>
+                
+
+            </div>
+
+            <footer>
+                By: Arkadiusz Marzewski, Oliwier Kubka
+            </footer>
+        </div>
+    </body>
+</html>
