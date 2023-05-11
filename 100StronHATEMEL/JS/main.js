@@ -10,8 +10,6 @@ function show(num) {
             }
         }
     }
-    
-
 } 
 
 function Pressed(){
