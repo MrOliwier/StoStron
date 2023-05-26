@@ -60,7 +60,7 @@ div.grid footer{
 }
 
 
-/* CATEGORIES */
+/* Kategorie */
 
 div.category {
     background-color: var(--col4);
@@ -123,7 +123,7 @@ div.catElementShown:hover {
 }
 
 
-/* CONTENT */
+/* Kontent */
 
 div.content {
     padding: 3ch;
